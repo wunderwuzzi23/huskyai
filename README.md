@@ -1,4 +1,4 @@
-# Husky AI
+# Husky AI - Machine Learning Attack Series
 
 This repo contains Husky AI training material, the web server and model file if you would like to follow along the Machine Learning Attack Series and try various attacks yourself.
 
