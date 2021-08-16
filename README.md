@@ -39,9 +39,7 @@ This repo contains the code and machine learning models for the Husky AI Machine
 * [Husky AI Github Repo](https://github.com/wunderwuzzi23/huskyai/)
 
 
-# Husky AI - Machine Learning Attack Series
-
-This repo contains Husky AI training material, the web server and model file if you would like to follow along the Machine Learning Attack Series and try various attacks yourself.
+# Husky AI Setup  
 
 ![HuskyAI](https://embracethered.com/blog/images/2020/husky-ai.jpg)
 
