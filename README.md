@@ -7,9 +7,11 @@ This repo contains Husky AI training material, the web server and model file if 
 
 ## Running Husky AI yourself
 
+The Husky AI web application is in the `/webapp` folder.
+
 ```
 docker build . -t huskyai_webapp
-docker run -p 8000:8000 huskyai_webapp
+docker run -p 8000:20080 huskyai_webapp
 ```
 
 ## Manual installation and setup
@@ -21,7 +23,7 @@ pip install -r requirements.txt
 ```
 #generate a key pair (e.g. for testing on localhost)
 openssl ecparam -genkey -name secp384r1 -out server.key
-openssl req -new -x509 -sha256 -key server.key -out server.crt -days 7300  -subj '/CN=localhost/O=huskyai/C=US'
+openssl req -new -x509 -sha256 -key server.key -out server.crt -days 7300  -subj '/CN=localhost:8000/O=huskyai/C=US'
 ```
 
 ```

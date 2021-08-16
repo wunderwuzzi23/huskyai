@@ -110,7 +110,8 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
 httpd = HTTPServer(("localhost", 20080), SimpleHTTPRequestHandler)
 httpd.socket = ssl.wrap_socket (httpd.socket, 
-        keyfile="server.key", 
-        certfile='server.crt', server_side=True)
+       keyfile="server.key", 
+       certfile='server.crt', server_side=True)
 
+print("Running.")
 httpd.serve_forever()
