@@ -16,8 +16,8 @@ docker build . -t huskyai_webapp
 docker run -p 8000:20080 huskyai_webapp
 ```
 
+The application is then available at: https://localhost:8000/.
 
-The application is then available at: https://localhost:8000/
 
 ## Manual installation and setup
 
@@ -41,7 +41,7 @@ The application is then available at: http://localhost:20080
 
 ### Web Server
 
-The way Husky AI is hosted in production currently is by using `flock` and a simple `crontab` entry:
+You can  use something like `flock` and a simple `crontab` entry also.
 
 ```
 sudo crontab -e
@@ -52,6 +52,7 @@ Use `flock` to make sure Python web server is running at all times (simple solut
 ```
 * * * * * /usr/bin/flock -n /tmp/huskyai.lock su - husky -c "cd /opt/huskyai/ && python huskyai.py"
 ```
+
 
 ## Threat Model
 
