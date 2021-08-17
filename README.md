@@ -53,6 +53,6 @@ Use `flock` to make sure Python web server is running at all times (simple solut
 * * * * * /usr/bin/flock -n /tmp/huskyai.lock su - husky -c "cd /opt/huskyai/ && python huskyai.py"
 ```
 
-# Threat Model
+## Threat Model
 
 ![Threat Model](https://raw.githubusercontent.com/wunderwuzzi23/huskyai/main/threat_model/husky-ai-machine-learning-threat-model.png)
