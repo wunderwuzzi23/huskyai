@@ -1,0 +1,2 @@
+This folder contains a basic threat model diagram. You can open the tm7 file with Microsoft's Threat Modeling tool.
+https://aka.ms/threatmodelingtool
