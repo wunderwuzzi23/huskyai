@@ -53,6 +53,9 @@ docker build . -t huskyai_webapp
 docker run -p 8000:20080 huskyai_webapp
 ```
 
+
+The application is then available at: https://localhost:8000/
+
 ## Manual installation and setup
 
 ```
@@ -68,6 +71,10 @@ openssl req -new -x509 -sha256 -key server.key -out server.crt -days 7300  -subj
 ```
 python huskyai.py
 ```
+
+The application is then available at: http://localhost:20080
+
+
 
 ### Production Web Server
 

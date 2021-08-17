@@ -108,7 +108,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(bytes(response,"utf-8"))
 
 
-httpd = HTTPServer(("localhost", 20080), SimpleHTTPRequestHandler)
+httpd = HTTPServer(("0.0.0.0", 20080), SimpleHTTPRequestHandler)
 httpd.socket = ssl.wrap_socket (httpd.socket, 
        keyfile="server.key", 
        certfile='server.crt', server_side=True)
