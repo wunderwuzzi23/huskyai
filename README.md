@@ -39,7 +39,7 @@ The application is then available at: http://localhost:20080
 
 
 
-### Production Web Server
+### Web Server
 
 The way Husky AI is hosted in production currently is by using `flock` and a simple `crontab` entry:
 
